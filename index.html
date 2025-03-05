@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthropod Research Showcase | Kenyatta University</title>
+    <meta name="description" content="Explore the fascinating world of arthropod research at Kenyatta University. View our findings on ants, wasps, and spiders in their natural habitats.">
+    <meta name="theme-color" content="#1a5c38" id="theme-color-meta">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-enhancements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="bug-icon"><i class="fas fa-bug"></i></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-bug"></i></span> 
+                <span class="logo-text">KU Research</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" aria-label="Home section">Home</a></li>
+                <li><a href="#research" aria-label="Research section">Research</a></li>
+                <li><a href="#gallery" aria-label="Gallery section">Gallery</a></li>
+                <li><a href="#conclusion" aria-label="Conclusion section">Conclusion</a></li>
+                <li><a href="report.html" aria-label="Full research report">Report</a></li>
+                <li><a href="#contact" aria-label="Team information">Team</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" type="button">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="font-size-toggle" aria-label="Toggle text size" title="Toggle text size" type="button">
+                    <i class="fas fa-text-height"></i>
+                </button>
+            </div>
+            <button class="burger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero">
+            <div class="particles-container" id="particles-js"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="accent-text">In-Situ</span> Arthropod
+                        <span class="animated-text">Research</span>
+                    </h1>
+                    <div class="hero-subtitle">Exploring Nature's Architects</div>
+                    <p class="hero-description">
+                        At Kenyatta University, we investigate the fascinating world of arthropod 
+                        habitats and behaviors within their natural ecosystems. Our research 
+                        reveals the intricate relationships between species and their environments.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#gallery" class="primary-btn">
+                            <span>Explore Gallery</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#research" class="secondary-btn">
+                            <span>Research Findings</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-stack">
+                        <div class="image-stack__item image-stack__item--top">
+                            <img src="images/ant-bark.jpeg" alt="Close-up of an ant on tree bark">
+                        </div>
+                        <div class="image-stack__item image-stack__item--bottom">
+                            <img src="images/habitat-wide.jpeg" alt="Forest habitat">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section">
+            <h2 class="section-heading">Research Findings</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Habitat Analysis</h3>
+                    <img src="images/habitat.jpg" alt="Tree bark habitat close-up" class="lightbox-img">
+                    <p>
+                        Our observations reveal complex microhabitats formed on tree bark surfaces where various arthropod species establish intricate niches. The textured surface of indigenous trees provides an ideal environment for ant colonies, particularly during the rainy season when humidity levels remain consistently high.
+                    </p>
+                    <div class="card-footer">
+                        <span class="research-tag">Microhabitat</span>
+                        <span class="research-tag">Ecosystem</span>
+                        <button class="read-more-btn" aria-label="Read more about habitat analysis">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <h3>Species Behavior</h3>
+                    <img src="images/behavior.jpg" alt="Ant foraging behavior" class="lightbox-img">
+                    <p>
+                        The documented foraging patterns demonstrate sophisticated communication networks among the observed ant colonies. Trail-marking behaviors were particularly notable, with clear evidence of pheromone-based navigation systems that optimize resource collection efficiency.
+                    </p>
+                    <div class="card-footer">
+                        <span class="research-tag">Behavior</span>
+                        <span class="research-tag">Communication</span>
+                        <button class="read-more-btn" aria-label="Read more about species behavior">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <h3>Adaptations</h3>
+                    <img src="images/adaptations.jpg" alt="Close-up of species adaptations" class="lightbox-img">
+                    <p>
+                        Morphological adaptations observed include specialized appendages for navigating vertical bark surfaces and defensive mechanisms that respond to environmental threats. The wasps demonstrated remarkable architectural skills in nest construction, utilizing available bark features.
+                    </p>
+                    <div class="card-footer">
+                        <span class="research-tag">Morphology</span>
+                        <span class="research-tag">Adaptation</span>
+                        <button class="read-more-btn" aria-label="Read more about adaptations">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="research-cta">
+                <a href="report.html" class="primary-btn">
+                    <span>Read Full Report</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-heading">Media Gallery</h2>
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All Media</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+                <button class="filter-btn" data-filter="image">Images</button>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="media-item video-item" data-category="video">
+                    <div class="media-header">
+                        <h3>Ant Colony Activity (Vertical View)</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/ant-vertical.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="media-caption">
+                        <p>Vertical footage capturing the complex vertical movements of ants on tree bark.</p>
+                        <div class="media-tags">
+                            <span class="tag">Ants</span>
+                            <span class="tag">Vertical Path</span>
+                            <span class="tag">Colony</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-item video-item" data-category="video">
+                    <div class="media-header">
+                        <h3>Wasp Behavior Study (Horizontal View)</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/wasp-horizontal.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="media-caption">
+                        <p>Horizontal documentation of wasp nest-building behavior and social interactions.</p>
+                        <div class="media-tags">
+                            <span class="tag">Wasps</span>
+                            <span class="tag">Nest-building</span>
+                            <span class="tag">Social</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-item image-item" data-category="image">
+                    <div class="image-card">
+                        <div class="image-wrapper">
+                            <img src="images/ant-bark.jpeg" alt="Ant on tree bark" class="lightbox-img">
+                            <div class="zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="media-caption">
+                            <h3>Bark Exploration</h3>
+                            <p>Macro photograph of worker ant traversing bark ridges</p>
+                            <div class="media-tags">
+                                <span class="tag">Macro</span>
+                                <span class="tag">Ant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-item image-item" data-category="image">
+                    <div class="image-card">
+                        <div class="image-wrapper">
+                            <img src="images/web-tree.jpeg" alt="Spider web on tree" class="lightbox-img">
+                            <div class="zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="media-caption">
+                            <h3>Web Architecture</h3>
+                            <p>Intricate web structure integrated with tree surface</p>
+                            <div class="media-tags">
+                                <span class="tag">Spider</span>
+                                <span class="tag">Web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-item image-item" data-category="image">
+                    <div class="image-card">
+                        <div class="image-wrapper">
+                            <img src="images/habitat-wide.jpeg" alt="University forest habitat" class="lightbox-img">
+                            <div class="zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="media-caption">
+                            <h3>Ecosystem Overview</h3>
+                            <p>Kenyatta University forest ecosystem overview</p>
+                            <div class="media-tags">
+                                <span class="tag">Forest</span>
+                                <span class="tag">Ecosystem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="media-item image-item" data-category="image">
+                    <div class="image-card">
+                        <div class="image-wrapper">
+                            <img src="images/ant-colony.png" alt="Ant colony structure" class="lightbox-img">
+                            <div class="zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="media-caption">
+                            <h3>Colony Structure</h3>
+                            <p>Colony formation and organization patterns</p>
+                            <div class="media-tags">
+                                <span class="tag">Colony</span>
+                                <span class="tag">Structure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-pagination">
+                <button class="load-more">Load More</button>
+            </div>
+        </section>
+
+        <section id="conclusion" class="conclusion-section">
+            <h2 class="section-heading">Conclusion & Insights</h2>
+            <div class="conclusion-content">
+                <div class="conclusion-text">
+                    <p>
+                        Our research demonstrates the remarkable complexity of arthropod ecosystems existing on the seemingly simple surface of tree bark. Several key findings emerged from our observations:
+                    </p>
+                    <ul>
+                        <li>Specialized micro-habitat utilization differs significantly between species</li>
+                        <li>Seasonal variations impact colony dynamics and foraging patterns</li>
+                        <li>Inter-species interactions reveal complex competitive and cooperative relationships</li>
+                        <li>Architectural adaptations show remarkable problem-solving capabilities</li>
+                    </ul>
+                    <p>
+                        These insights contribute to our understanding of biodiversity within the Kenyatta University ecosystem and highlight the importance of preserving these natural environments for continued research and educational opportunities.
+                    </p>
+                </div>
+                <div class="conclusion-image">
+                    <img src="images/research-team.jpg" alt="Research team in the field" class="lightbox-img">
+                    <p>Our research team conducting field observations</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="team-section">
+            <h2 class="section-heading">Research Team</h2>
+            <div class="team-container">
+                <div class="team-member" data-sound="sound1">
+                    <div class="member-photo">
+                        <img src="images/team-member1.jpeg" alt="Simon Wandera" class="member-img">
+                        <div class="member-overlay">
+                            <div class="member-icons">
+                                <a href="mailto:simon.wandera@example.com" class="icon-link" aria-label="Email Simon"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+254747081576" class="icon-link" aria-label="Call Simon"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Simon Wandera</h3>
+                        <p class="admission-number">I72/5875/2023</p>
+                        <p class="member-role">Research Lead & Website Creator</p>
+                        <p class="member-description">Specializing in ant colony dynamics and foraging patterns observed in indigenous tree species.</p>
+                        <p class="member-contact"><i class="fas fa-phone-alt"></i> +254 747 081576</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-sound="sound2">
+                    <div class="member-photo">
+                        <img src="images/team-member2.jpeg" alt="Melvic Karanja" class="member-img">
+                        <div class="member-overlay">
+                            <div class="member-icons">
+                                <a href="mailto:melvic.karanja@example.com" class="icon-link" aria-label="Email Melvic"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+254791937325" class="icon-link" aria-label="Call Melvic"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Melvic Karanja</h3>
+                        <p class="admission-number">I72/1026/2024</p>
+                        <p class="member-role">Field Researcher</p>
+                        <p class="member-description">Focused on microhabitat analysis and environmental factors affecting arthropod distribution.</p>
+                        <p class="member-contact"><i class="fas fa-phone-alt"></i> +254 791 937325</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-sound="sound3">
+                    <div class="member-photo">
+                        <img src="images/team-member3.jpeg" alt="Jeremmy Otieno" class="member-img">
+                        <div class="member-overlay">
+                            <div class="member-icons">
+                                <a href="mailto:jeremmy.otieno@example.com" class="icon-link" aria-label="Email Jeremmy"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+254748170164" class="icon-link" aria-label="Call Jeremmy"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Jeremmy Otieno</h3>
+                        <p class="admission-number">I72/1066/2024</p>
+                        <p class="member-role">Data Analyst</p>
+                        <p class="member-description">Conducts statistical analysis of arthropod behavior and creates visual representations of findings.</p>
+                        <p class="member-contact"><i class="fas fa-phone-alt"></i> +254 748 170164</p>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-sound="sound4">
+                    <div class="member-photo">
+                        <img src="images/team-member4.jpeg" alt="Nelly Ann" class="member-img">
+                        <div class="member-overlay">
+                            <div class="member-icons">
+                                <a href="mailto:nelly.ann@example.com" class="icon-link" aria-label="Email Nelly"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+254746494103" class="icon-link" aria-label="Call Nelly"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nelly Ann</h3>
+                        <p class="admission-number">I28/5606/2024</p>
+                        <p class="member-role">Documentation Specialist</p>
+                        <p class="member-description">Documents research findings through photography and detailed field notes for analysis.</p>
+                        <p class="member-contact"><i class="fas fa-phone-alt"></i> +254 746 494103</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-quote">
+                <blockquote>
+                    "Through systematic observation and analysis of arthropods in their natural habitats, we gain valuable insights into ecological relationships and adaptation strategies."
+                </blockquote>
+                <cite>- KU Arthropod Research Team</cite>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie consent -->
+    <div id="cookie-consent" class="cookie-consent" role="alert">
+        <div class="cookie-content">
+            <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="cookie-btn accept">Accept</button>
+                <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share modal -->
+    <div id="share-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">&times;</span>
+            <h3>Share This Research</h3>
+            <div class="share-buttons">
+                <button class="share-btn" data-platform="facebook" aria-label="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <button class="share-btn" data-platform="twitter" aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="share-btn" data-platform="linkedin" aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </button>
+                <button class="share-btn" data-platform="email" aria-label="Share via Email">
+                    <i class="fas fa-envelope"></i> Email
+                </button>
+                <div class="copy-link">
+                    <input type="text" id="share-url" readonly value="">
+                    <button id="copy-link-btn" aria-label="Copy link">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add share button to appropriate sections -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add share buttons to sections
+            const researchSection = document.querySelector('#research');
+            const conclusionSection = document.querySelector('#conclusion');
+            
+            [researchSection, conclusionSection].forEach(section => {
+                if (section) {
+                    const shareBtn = document.createElement('button');
+                    shareBtn.className = 'floating-share-btn';
+                    shareBtn.setAttribute('aria-label', 'Share this section');
+                    shareBtn.innerHTML = '<i class="fas fa-share-alt"></i>';
+                    section.appendChild(shareBtn);
+                    
+                    shareBtn.addEventListener('click', function() {
+                        openShareModal(section.id);
+                    });
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Arthropod Research Group | Designed & Developed by Simon Wandera</p>
+            <p>All images and videos are property of Kenyatta University Research Department</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="interactive-enhancements.js"></script>
+    <script>
+        (function() {
+            // Apply theme immediately before page renders
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const savedTheme = localStorage.getItem('theme');
+            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            
+            // Update theme color meta tag
+            const metaThemeColor = document.getElementById('theme-color-meta');
+            if (metaThemeColor) {
+                metaThemeColor.setAttribute('content', theme === 'dark' ? '#1c1c1c' : '#1a5c38');
+            }
+        })();
+    </script>
+</body>
+</html>

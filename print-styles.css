@@ -1,0 +1,103 @@
+/* Print-Friendly Styles */
+
+@media print {
+    /* General print styling */
+    body {
+        background-color: white;
+        font-size: 12pt;
+        color: black;
+    }
+
+    /* Hide non-printable elements */
+    nav, 
+    #navbar, 
+    .burger,
+    .report-sidebar,
+    #back-to-top,
+    .floating-share-btn,
+    .cookie-consent,
+    #preloader,
+    .mobile-toc,
+    .progress-bar-container,
+    .report-download,
+    .nav-actions {
+        display: none !important;
+    }
+
+    /* Page layout */
+    .report-container {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .report-content {
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Fix page breaks */
+    h1, h2, h3 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    p, li {
+        page-break-inside: avoid;
+    }
+
+    .report-section {
+        page-break-inside: avoid;
+    }
+
+    /* Add URL after links */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+        font-style: italic;
+    }
+
+    /* Make images fit page */
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+
+    /* Add header and footer info */
+    @page {
+        margin: 2cm;
+    }
+
+    .report-header {
+        margin-bottom: 2cm;
+    }
+
+    .report-footer {
+        margin-top: 2cm;
+    }
+
+    /* Enhance finding cards for print */
+    .finding-card {
+        border: 1px solid #ddd;
+        padding: 1cm;
+        margin-bottom: 1cm;
+        page-break-inside: avoid;
+    }
+
+    /* Improve readability */
+    p, li {
+        line-height: 1.5;
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Add page numbers */
+    @page {
+        @bottom-center {
+            content: counter(page);
+        }
+    }
+}
