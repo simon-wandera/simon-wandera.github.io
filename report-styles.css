@@ -356,3 +356,59 @@
         font-size: 1.5rem;
     }
 }
+
+/* Classification Cards */
+.classification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.classification-card {
+    background-color: #f5f7f3;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--color-primary);
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.classification-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.classification-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.classification-card li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* Add citation styling */
+.citation-note {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+html[data-theme="dark"] .classification-card {
+    background-color: #2a2a2a;
+    border-left-color: var(--color-secondary);
+}
+
+html[data-theme="dark"] .classification-card h3 {
+    color: var(--color-secondary);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .classification-grid {
+        grid-template-columns: 1fr;
+    }
+}
