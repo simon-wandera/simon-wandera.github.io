@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c7c4c"/>
+      <stop offset="100%" stop-color="#f39c12"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Circle background -->
+  <circle cx="256" cy="256" r="246" fill="#1c1c1c" stroke="url(#logoGradient)" stroke-width="20"/>
+  
+  <!-- Bug body -->
+  <ellipse cx="256" cy="270" rx="120" ry="150" fill="url(#logoGradient)"/>
+  
+  <!-- Bug head -->
+  <circle cx="256" cy="160" r="70" fill="url(#logoGradient)"/>
+  
+  <!-- Bug eyes -->
+  <circle cx="226" cy="140" r="12" fill="#1c1c1c"/>
+  <circle cx="286" cy="140" r="12" fill="#1c1c1c"/>
+  
+  <!-- Bug legs -->
+  <path d="M150 230 L80 190 M150 270 L60 270 M150 310 L80 350 M362 230 L432 190 M362 270 L452 270 M362 310 L432 350" 
+        stroke="url(#logoGradient)" stroke-width="15" stroke-linecap="round"/>
+  
+  <!-- Bug antennae -->
+  <path d="M236 120 Q226 60 186 50 M276 120 Q286 60 326 50" 
+        stroke="url(#logoGradient)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Text at bottom -->
+  <text x="256" y="440" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        fill="url(#logoGradient)" text-anchor="middle">KU RESEARCH</text>
+</svg>
